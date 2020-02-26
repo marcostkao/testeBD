@@ -1,0 +1,25 @@
+criate database TESTE;
+
+show databases;
+
+source ambiente.sql
+
+show tables;
+
+select * from tb_estoque;
+
+ select * from tb_filial;
+
+select * from tb_produto;
+
+
+select * from tb_filial f inner join tb_produto p on f.id_filial=p.id_produto;
+
+select * from tb_filial f inner join tb_estoque e on f.id_filial=e.id_filial;
+
+create table tb_pedido_nota(id_pedido bigint(12) not null,
+    ->                             id_nf bigint(12) not null);
+
+select * from tb_estoque;
+
+ select * from tb_movimentacoes;
